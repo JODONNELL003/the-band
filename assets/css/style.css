@@ -1,0 +1,53 @@
+/*  set the colour of each page to light grey */
+body {
+    background-color: #d3d3d3;
+    margin: 10px;
+}
+
+/* styling the container  using flex box*/
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.container > div {
+  padding: 5px;
+  text-align: center;
+  font-size: 1em;
+  color: #ffeead;
+}
+
+/* styling each element in the nav */
+
+html, body {
+  background-color: #d3d3d3;
+  margin: 10px;
+}
+
+.container > div:nth-child(1) {
+  background-color: #96ceb4;	
+}
+
+.container > div:nth-child(2) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(3) {
+  background-color: #96ceb4;
+}
+
+.container > div:nth-child(4) {
+  background-color: #96ceb4;
+}
+
+.container > div:nth-child(5) {
+  background-color: #96ceb4;
+}
+
+/* make nav elements responsive for different screen sizes */
+
+.container > div {
+  flex: 1;
+}
