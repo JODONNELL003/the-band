@@ -1,3 +1,43 @@
+/* styling the header */
+
+header{
+  margin: 10;
+}
+
+/* centre align main heading */
+
+.mainheading{
+  text-align: center;
+  
+}
+
+/* putting the logo into flex row 2 */
+
+.firstrow{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  background: url("../images/panasonics.jpg");
+  margin-top: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px; 
+  width: 30%;
+  
+}
+
+.welcome{
+  margin-top: 20px;
+  height: 300px;
+  width: 60%;
+  background-color: #ffffff;
+  
+}
+
+
 /*  set the colour of each page to light grey */
 body {
     background-color: #d3d3d3;
@@ -6,28 +46,30 @@ body {
 
 /* styling the container  using flex box*/
 .container {
-  border: 5px solid #ffcc5c;
+  border: 5px solid #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   
 }
 
 .container > div {
-  padding: 5px;
+  padding: 10px;
   text-align: center;
-  font-size: 1em;
+  font-size: 2em;
   color: #ffeead;
 }
 
-/* styling each element in the nav */
+/* set the backgroud colour of page to grey */
 
 html, body {
   background-color: #d3d3d3;
   margin: 10px;
 }
 
+/* styling each element in the nav */
+
 .container > div:nth-child(1) {
-  background-color: #96ceb4;	
+  background-color: #123456;	
 }
 
 .container > div:nth-child(2) {
@@ -35,7 +77,7 @@ html, body {
 }
 
 .container > div:nth-child(3) {
-  background-color: #96ceb4;
+  background-color: #123456;
 }
 
 .container > div:nth-child(4) {
@@ -43,7 +85,7 @@ html, body {
 }
 
 .container > div:nth-child(5) {
-  background-color: #96ceb4;
+  background-color: #123456;
 }
 
 /* make nav elements responsive for different screen sizes */
@@ -51,3 +93,15 @@ html, body {
 .container > div {
   flex: 1;
 }
+
+.welcomeinfo{
+  margin-top: 20px;
+  height: 100px;
+  width: 50px;
+  background-color:#676767;
+}
+
+h2{
+  text-align: center;
+}
+
