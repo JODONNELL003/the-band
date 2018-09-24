@@ -4,10 +4,15 @@
         
         <!-- links for all stylesheets and hover effects -->
         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
       <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
       <link rel="stylesheet" href="audioclips.html" type="text/css" />
       <link rel="stylesheet" href="" type="text/css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      
+      <title>The Panasonics</title>
        
     </head>
     <body>
@@ -17,12 +22,72 @@
         <header>
             <h1 class="mainheading">The Panasonics</h1>
           <nav class="container">
-                <ul>
-                   <li><a href"index.html">Home</a></li> 
-                   <li><a href"bios.html">Bios</a></li>
-                   <li><a href"gallery.html">Gallery</a></li>
-                   <li><a href"audio.html">Audio</a></li>
-                   <li><a href"contact.html">Contact Us</a></li>
+                <ul class="nav">
+                   <li><a href="../index.html">Home</a></li> 
+                   <li><a href="../bios.html">Bios</a></li>
+                   <li><a href="../gallery.html">Gallery</a></li>
+                   <li><a href="../audio.html">Audio</a></li>
+                   <li><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </nav>  
         </header>
+        
+        <div>
+            <h1 class="contactheading">Contact Page</h1>
+            <p class ="contacttext">Please use the form below to contact us with any questions or comments</p>
+            <form name="htmlform" method="post" action="html_form_send.php">
+<table width="450px">
+</tr>
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+ 
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+ 
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+ 
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   ( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )
+ </td>
+</tr>
+</table>
+</form>
+</body>
+        
+        </div>

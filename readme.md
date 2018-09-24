@@ -18,4 +18,11 @@ The Firstpage
 
 I started by setting up the nav elements using flexbox and then changed the colour picture to mono as 
 the grey background was better suited to a mono picture.  The band is a 1960s style band so this seemed
-more in line with trends
+more in line with trends.  I later decided to use a free background image from pixabay still staying with the mono theme.
+
+I then added a menu - first I used flexbox and padded out the items.  However this looked very amateurish so I decided
+to make my items go down the page, centering these, adding in a hover effect of a blue line underneath each item.  I then linked my pages together
+using absolute filepaths.
+
+The Second page
+---------------

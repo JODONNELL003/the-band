@@ -3,6 +3,7 @@
 header{
   margin: 20;
   text-align: center;
+  font-family: monospace ;
 }
 
 /* centre align main heading */
@@ -30,13 +31,22 @@ body {
 
 .nav{
   border:1px solid #ccc;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
+  border-width:1px 0;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  flex-wrap: wrap;
   
+  width: 100%;
+  background: #f0f0f0;
+  
+  
+}
+
+nav ul{
+  display:flex;
+  justify-content: space-between;
+}
 
 ul{
   text-align: center;
@@ -49,6 +59,7 @@ ul{
 ul li{
   list-style:  none;
   padding: 10px 20px;
+  flex: 1 1 0;
 }
 
 ul li a{
@@ -58,6 +69,7 @@ ul li a{
   position: relative;
 
 }
+
 
 /* hover effects for menu items */
 
@@ -83,6 +95,7 @@ ul li:hover a:before{
   display: flex;
   justify-content: space-between;
   font-size: 1em;
+  flex-wrap: wrap;
 }
 
 .logo{
@@ -90,9 +103,10 @@ ul li:hover a:before{
   margin-top: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px; 
-  width: 400px;
+  flex-basis: 30%;
+  max-height: 100%;
   max-width: 100%;
+  
 
 }
 
@@ -109,24 +123,12 @@ ul li:hover a:before{
   text-align: center;
 }
 
-.newsbox{
-  margin-top: 20px;
-  
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%;
-  font-size: 1em;
-  text-align: center;
-}
-
-
 
 footer{
   display: flex;
-  
-  margin-top: 40px;
+  margin-top: 200px;
   font-size: 1em;
-  text-align: center;
+  
 }
 
 h3{
@@ -137,3 +139,25 @@ h3{
   text-align: center;
 }
 
+/* social media links settings */
+
+
+
+
+
+/* contact page settings for layout */
+.contactheading{
+  text-align: center;
+}
+
+.contacttext{
+  text-align: center;
+}
+
+/* media queries */
+@media (min-width: 900px){
+  .nav{
+    display: flex;
+    justify-content:space-between;
+  }
+}
