@@ -13,9 +13,7 @@ header{
   
 }
 
-.container{
-  margin: 0 auto;
-}
+
 
 /*  set the colour of each page to light grey */
 
@@ -30,13 +28,12 @@ body {
 /*  styling the menu */
 
 .nav{
-  border:1px solid #ccc;
+  
   border-width:1px 0;
   list-style-type: none;
   margin:0;
   padding:0;
-  flex-wrap: wrap;
-  
+  flex: wrap;
   width: 100%;
   background: #f0f0f0;
   
@@ -89,11 +86,11 @@ ul li:hover a:before{
 }
 
 
-/* putting the logo into row 2 */
+/* settings for flex container welcomebox */
 
 .welcomebox{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 1em;
   flex-wrap: wrap;
 }
@@ -103,12 +100,17 @@ ul li:hover a:before{
   margin-top: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  flex-basis: 30%;
+  background-size: contain;
+  height: 420px;
+  width: 50%;
+  
+  flex-basis: 30%;/*
   max-height: 100%;
   max-width: 100%;
-  
+  flex-direction: column; */
+} 
 
-}
+
 
 .welcome{
   margin-top: 20px;
@@ -142,6 +144,61 @@ h3{
 /* social media links settings */
 
 
+/* gallery page styling */
+
+.galleryheading{
+  text-align: center;
+  font-size: 4em;
+}
+
+.imageintro {
+  text-align: center;
+  font-size: 4em;
+}
+
+.imagedesription{
+  font-size:2em;
+  text-align: center;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sit next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 
 
@@ -154,10 +211,49 @@ h3{
   text-align: center;
 }
 
-/* media queries */
-@media (min-width: 900px){
+/* media queries for home page*/
+
+@media (max-width: 600px){
   .nav{
-    display: flex;
-    justify-content:space-between;
+    flex-direction:column;
   }
+}
+
+@media (max-width:  400px) {
+  .welcomebox{
+    flex-direction:column;
+  }
+}
+
+@media (max-width:  400px) {
+  .logo {
+    flex-direction:column;
+  }
+}
+
+@media (max-width:  400px) {
+  .socialmedialinks{
+    flex-direction:column;
+  }
+}
+
+/* media settings for gallery page */
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+ header div { margin: 0; }
+  header { padding: 0; }
+  
 }

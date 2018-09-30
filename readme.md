@@ -13,7 +13,7 @@ The UX
 I started by using the 5 planes framework to design the website and then did an overall conceptual diagram
 and a wireframe for each page.  These can be found in the band planning document accessed by clicking on this link.  
 
-The Firstpage
+My homepage
 -------------
 
 I started by setting up the nav elements using flexbox and then changed the colour picture to mono as 
@@ -24,5 +24,14 @@ I then added a menu - first I used flexbox and padded out the items.  However th
 to make my items go down the page, centering these, adding in a hover effect of a blue line underneath each item.  I then linked my pages together
 using absolute filepaths.
 
-The Second page
+My gallery page
 ---------------
+
+This page was made up of a series of pictures showing past gigs for the band.
+I created a responsive gallery showing pictures of the band from the past and present.
+
+My contact page
+---------------
+I created a very simple form for this page which would be easy to fill in.
+
+
