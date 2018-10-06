@@ -3,8 +3,8 @@ The band project
 
 Introduction
 ------------
-This project is about a 1960s style band called the panasonics.
-I have been asked to build a website of 4 or 5 pages showcasing the panasonics.  
+This project is about a 1960s style band called the Monkees.
+I have been asked to build a website of 4 or 5 pages showcasing the Monkees.  
 The primary target audience is the bands fans who want a way to see where the panasonics are performing and to know more about the members of the band.
 I will include a gallery of events, some sample tracks for download and a contact link.
 
@@ -29,6 +29,13 @@ My gallery page
 
 This page was made up of a series of pictures showing past gigs for the band.
 I created a responsive gallery showing pictures of the band from the past and present.
+
+My Videos page
+--------------
+
+This page enabled the user to click on a video and view a past performance by the Monkees.
+I embedded videos into this page from you tube.
+
 
 My contact page
 ---------------

@@ -31,15 +31,16 @@ body {
 
 /*  styling the menu */
 
-.nav{
+.container{
   
   border-width:1px 0;
   list-style-type: none;
   margin:0;
   padding:0;
-  flex: wrap;
+  flex:wrap;
   width: 100%;
   background: #f0f0f0;
+  
   
   
 }
@@ -98,33 +99,21 @@ ul li:hover a:before{
   font-size: 1em;
   flex-wrap: wrap;
 }
-/*
-.pictureofband{
-  background: url("../images/morepanasonics.jpg");
-  margin-top: 20px;
-  background-repeat: no-repeat;
-  background-position: cover;
-  background-size: contain;
-  height: 420px;
-  width: 100%;
-  display: flex;
-  flex-basis: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  justify-content: space-between;
-}*/
+
 
 .heroimage {
-  background: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.5)), url("../images/morepanasonics.jpg");
   
-  height: 320px;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../images/panasonicsagain.jpg");
+  height: 80vh;
+  width:100VW;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-size: cover;
-  position: relative;
-  display: flex
-  flex-basis: 100%;
+  background-repeat: no-repeat;
+  
+  
 }
 
 .welcome{
@@ -140,9 +129,10 @@ ul li:hover a:before{
 
 
 footer{
-  display: flex;
-  margin-top: 200px;
+  
+  margin-top: 20px;
   font-size: 1em;
+  
   
 }
 
@@ -156,6 +146,11 @@ h3{
 
 /* social media links settings */
 
+.list-inline social-links{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
 /* gallery page styling */
 
@@ -164,58 +159,50 @@ h3{
   font-size: 1em;
 }
 
-.imageintro {
-  text-align: center;
-  font-size: 2em;
+.responsivegallery{
+  padding: 0 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.imagedesription{
-  font-size:2em;
-  text-align: center;
+.gallery {
+    border: 1px solid #ccc;
+    height: 100%;
+    height: auto;
 }
 
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+.gallery:hover {
+    border: 1px solid #fff;
 }
 
-/* Create two equal columns that sit next to each other */
-.column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
+.gallery img {
+    width: 250px;
+    height: 250px;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
+.desc {
+    padding: 15px;
+    text-align: center;
 }
 
 
+
+
+  
+/* video page styling */
+
+.youtubevideos{
+  display: flex;
+  
+  justify-content:space-between;
+  
+}
+ 
 
 /* contact page settings for layout */
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -240,6 +227,11 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+.contactheading {
+  font-size: 1em;
+  text-align: center;
+}
+
 .contactform {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -248,21 +240,31 @@ input[type=submit]:hover {
 
 /* media queries for home page*/
 
-@media (max-width: 600px){
-  .nav{
-    flex-direction:column;
+/* this is the bit that makes the nav bar resize on small screens */
+
+@media all and (max-width: 1000px) {
+  .container {
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    flex-direction: column;
+    display: flex;
+    
   }
 }
 
-@media (max-width:  400px) {
+@media (max-width:  600px) {
   .welcomebox{
     flex-direction:column;
   }
 }
 
-@media (max-width:  400px) {
+@media (max-width:  1000px) {
   .heroimage {
+    background-size: contain;
+    flex-wrap: wrap;
+    flex-basis: 100%;
     flex-direction:column;
+    display: flex;
   }
 }
 
@@ -274,21 +276,15 @@ input[type=submit]:hover {
 
 /* media settings for gallery page */
 
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .responsivegallery {
+    
+    flex-direction:column;
+    justify-content:center;
+  }
 }
 
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
 
-@media screen and (max-width: 400px) {
- header div { margin: 0; }
-  header { padding: 0; }
-  
-}
+
