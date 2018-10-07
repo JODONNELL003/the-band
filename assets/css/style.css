@@ -187,8 +187,37 @@ h3{
     text-align: center;
 }
 
+/* biographies page styling */
+
+.biosheading {
+  text-align: center;
+}
+
+.bioscontainer{
+  padding: 0 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
 
 
+.biospicture img{
+  top:50%;
+  left:50%;
+  padding:20px;
+  box-sizing: border-box;
+  
+  
+}
+
+.biosdescription{
+  
+  float: right;
+  height:300px;
+  
+}
 
   
 /* video page styling */
@@ -252,6 +281,7 @@ input[type=submit]:hover {
   }
 }
 
+
 @media (max-width:  600px) {
   .welcomebox{
     flex-direction:column;
@@ -277,14 +307,28 @@ input[type=submit]:hover {
 /* media settings for gallery page */
 
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a one column-layout instead of three columns */
 @media screen and (max-width: 800px) {
   .responsivegallery {
-    
     flex-direction:column;
     justify-content:center;
   }
 }
 
+/* media settings for biographies page */
 
+@media screen and (max-width: 1000px) {
+  .bioscontainer {
+    flex-direction:column;
+    justify-content:center;
+  }
+}
 
+@media screen and (max-width: 1000px) {
+  .biosdescription {
+    flex-direction:column;
+    justify-content:center;
+  }
+}
+
+/* media settings for audio page */
