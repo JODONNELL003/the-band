@@ -213,7 +213,6 @@ h3{
 }
 
 .biosdescription{
-  
   float: right;
   height:300px;
   
@@ -331,4 +330,12 @@ input[type=submit]:hover {
   }
 }
 
-/* media settings for audio page */
+@media screen and (max-width: 1000px) {
+  .biosdescription p {
+    flex-direction:column;
+    justify-content:center;
+  }
+}
+
+/* media settings for videos page are the same as for galleries page */
+/* same classes used for videos page as for galleries page */

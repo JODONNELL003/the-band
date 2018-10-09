@@ -19,6 +19,9 @@ ii)  The band members short biographies are available for fans to see.
 iii)  The band wanted a way for fans to contact them easily so the contact form is essential.
 iv) The band wanted a videos page so that fans could see some of their performances over the years.
 
+Band planning project 1 wireframe and notes added as separate pdf file to project showing initial plans of user
+interface and includes my notes on adaptations listed below.
+
 My homepage
 -------------
 
@@ -54,15 +57,61 @@ The timeline would show events from the formation of the monkees to the present 
 
 Testing
 -------
-I tested each page as I built it and also tested it out during my mentor sessions.
+I tested each page as I built it and also tested each piece of functionality individually.
 I also showed the website to my family and friends as I built it and asked for suggestions
 from them as to how to improve it.
 I checked that my website worked on different browsers and screen sizes.
 
+Tests done were:
+i) Check that my nav bar appeared on each page. I used a nav bar with a class of container to 
+ensure that my nav bar showed in across the top of my screen in a flex container.
+I started with my home page and then copied the code into each of my 5 pages.  Worked as expected.
+
+ii) Next I worked on my hover effect for the nav bar.  I liked the blue line hover effect so
+put this into my index page and found that it worked well with the white background.
+
+iii)At this stage I had a plain white background on my home page which looked rather dull so I looked
+on pixabay for other suitable backgrounds and found a grey mottled background which I then
+put on my index page using a link to pixabay.  Once I had it working on the index page I then
+copied the background to my other pages.  Worked as expected.
+
+iv) I then decided to work on my footer.  I put in the links to font awesome and it worked as expected.
+
+v)  I then put a photograph of the monkees and some text into my header page.  I spent some time getting
+this right using a flex container and it showed up as expected.
+
+vi) I copied my footer to my other pages and checked it worked as expected.
+
+vii)  I then worked on the body of my contact page.  I decided to put in a light grey background
+to contrast with the grey mottled background.  I checked that the form showed up on the page.  Worked
+as expected.
+
+viii)  I then showed my half completed website to friends and family.  It was clear that the footer
+wasn't showing up as it should and I soon realised that the font awesome link was missing on 
+all pages except the home page.  Fixed this and pages worked as expected.
+
+ix)  I then completed work on my gallery page.  It took a while to get the images and text to line
+up - using float and setting appropriate heights took a while, and I realised that it was important
+that all the pictures were initially the same sort of size for the page to look good.  I was keen to 
+get a clear image with crisp text at the side of each image.  I asked my friends and family to look 
+at this page and they felt that it was clear and the pictures were crisp, with the text telling a 
+short story.
+
+x) Finally I completed work on my videos page.  I decided to use videos rather than mp3 files as 
+these looked much better and my audience were able to see the videos and appreciate the performances
+in a concert scenario.
+
+xi) I then worked on getting the website to be responsive by adding in media queries.  These took some
+time to get right - I got confused with min an max widths but eventually with the help of developers 
+from codebar meetup I managed to sort this out.  I did a final check of my website with friends and 
+family who complemented me on the layout and felt that it was good to go.  However this does not mean
+that it was perfect - I have suggested a couple of improvements I could make to it below.
+
+
 Deployment
 ----------
 
-I deployed my project to github using 10 commits for the full project.
+I deployed my project to github using a total of 11 commits for the full project.
 My project was commited to the master branch.
 
 Credits
@@ -70,6 +119,14 @@ Credits
 All videos were from youtube.
 Photographs were from code institute assets on github.
 Thanks to my friends and family who supported me throughout this project.
+Special thanks to the developers at codebar and freecodecamp meetups whose help 
+and advice proved invaluable and gave me lots of things to think about.
+Finally thanks to my mentor who gave me good advice at the beginning, middle and 
+end of the project, and encouraged me to work to given deadlines to produce
+a quality front end for my website.
+
+
+
 
 
 
