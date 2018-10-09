@@ -223,9 +223,9 @@ h3{
 /* video page styling */
 
 .youtubevideos{
-  display: flex;
   
-  justify-content:space-between;
+  flex-direction: column;
+  justify-content:center;
   
 }
  

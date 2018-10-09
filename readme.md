@@ -11,7 +11,13 @@ I will include a gallery of events, some sample tracks for download and a contac
 The UX 
 -------
 I started by using the 5 planes framework to design the website and then did an overall conceptual diagram
-and a wireframe for each page.  These can be found in the band planning document accessed by clicking on this link.  
+and a wireframe for each page.  These can be found in the band planning document accessed through the planning document 
+which can be found in the band planning pdf document contained in this project.
+User stories: 
+i) The website is used to showcase the band showing some of their highlights.
+ii)  The band members short biographies are available for fans to see.
+iii)  The band wanted a way for fans to contact them easily so the contact form is essential.
+iv) The band wanted a videos page so that fans could see some of their performances over the years.
 
 My homepage
 -------------
@@ -40,5 +46,33 @@ I embedded videos into this page from you tube.
 My contact page
 ---------------
 I created a very simple form for this page which would be easy to fill in.
+
+Another feature idea for my website
+-----------------------------------
+If I had more time I would choose to put in a timeline for the band on a separate page.
+The timeline would show events from the formation of the monkees to the present day.
+
+Testing
+-------
+I tested each page as I built it and also tested it out during my mentor sessions.
+I also showed the website to my family and friends as I built it and asked for suggestions
+from them as to how to improve it.
+I checked that my website worked on different browsers and screen sizes.
+
+Deployment
+----------
+
+I deployed my project to github using 10 commits for the full project.
+My project was commited to the master branch.
+
+Credits
+-------
+All videos were from youtube.
+Photographs were from code institute assets on github.
+Thanks to my friends and family who supported me throughout this project.
+
+
+
+
 
 
