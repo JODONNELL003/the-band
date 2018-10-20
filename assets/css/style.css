@@ -310,7 +310,8 @@ input[type=submit]:hover {
 
 @media (max-width:  800px) {
   .welcomecontainer{
-    border: 5px solid #c3c3c3;
+    /*
+    border: 2px solid #c3c3c3; */
     flex-direction:column;
     max-width:90%;
     flex-wrap:wrap;
@@ -318,6 +319,18 @@ input[type=submit]:hover {
     width: auto;
   }
 }
+
+@media (max-width:  800px) {
+  .welcome{
+    flex-direction:column;
+    max-width:90%;
+    flex-wrap:wrap;
+    height: auto;
+    width: auto;
+  }
+}
+
+
 
 @media (max-width:  568px) {
   .heroimage {
