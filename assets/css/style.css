@@ -271,18 +271,19 @@ input[type=submit]:hover {
 }
 
 .contactform {
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 2px;
+   
     width: 40%;
     text-align: center;
     
 }
 
 .contactus{
-  top:50%;
+  
   font-size: 20px;
   text-align:center;
   position: relative;
+  
   
 }
 
@@ -401,6 +402,22 @@ input[type=submit]:hover {
     justify-content:center;
     height: auto;
     width: auto;
+    margin: auto;
+    
+    
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .contactform{
+    flex-direction:column;
+    justify-content:center; 
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    border: 5px solid #c3c3c3;
   }
   
 }
